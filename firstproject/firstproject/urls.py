@@ -16,7 +16,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from firstapp.views import Home,date_and_time
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('home/',Home),
+    path('dt/',date_and_time),
 ]
