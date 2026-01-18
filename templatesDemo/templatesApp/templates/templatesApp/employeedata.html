@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Information</title>
+    <link rel="stylesheet" href="{% static 'css/emp.css' %}" />
 </head>
 <body>
     <h1>Employee Details</h1>
@@ -11,6 +13,7 @@
     <h3>ID : {{id}}</h3>
     <h3>Role : {{role}}</h3>
     <h3>Salary : {{salary}}</h3>
+    <img src="{% static 'images/ME.jpg'%}" />
     
 </body>
 </html>
